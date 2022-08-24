@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">SENG440 Assignment 1</string>
+    <string name="app_name">Pokemon Guide</string>
+    <string name="about">About</string>
+    <string name="games">Games</string>
+    <string name="movies">Movies</string>
+    <string name="random">Random</string>
 </resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Guía de Pokémon</string>
+    <string name="about">Juegos</string>
+    <string name="games">Caracteres</string>
+    <string name="movies">Películas</string>
+    <string name="random">Aleatorio</string>
+</resources>
