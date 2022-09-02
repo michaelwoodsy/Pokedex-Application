@@ -15,8 +15,56 @@
         <entry key="../../../../layout/compose-model-1661319666442.xml" value="0.1" />
         <entry key="../../../../layout/compose-model-1661319687938.xml" value="0.22" />
         <entry key="../../../../layout/compose-model-1661320281550.xml" value="0.32592592592592595" />
+        <entry key="../../../../layout/compose-model-1661402402535.xml" value="0.28969594594594594" />
+        <entry key="../../../../layout/compose-model-1661402406743.xml" value="0.1" />
+        <entry key="../../../../layout/compose-model-1661402414953.xml" value="0.1" />
+        <entry key="../../../../layout/compose-model-1661402415694.xml" value="0.28969594594594594" />
+        <entry key="../../../../layout/compose-model-1661473049408.xml" value="0.1" />
+        <entry key="../../../../layout/compose-model-1661477625015.xml" value="0.1" />
+        <entry key="../../../../layout/compose-model-1661478289760.xml" value="2.0" />
+        <entry key="../../../../layout/compose-model-1661478297233.xml" value="0.1" />
+        <entry key="../../../../layout/compose-model-1661479310268.xml" value="0.13796296296296295" />
+        <entry key="../../../../layout/compose-model-1661479314315.xml" value="0.13796296296296295" />
+        <entry key="../../../../layout/compose-model-1661479317276.xml" value="0.13796296296296295" />
+        <entry key="../../../../layout/compose-model-1661479325989.xml" value="2.0" />
+        <entry key="../../../../layout/compose-model-1661479336543.xml" value="0.13796296296296295" />
+        <entry key="../../../../layout/compose-model-1661925703159.xml" value="0.1" />
+        <entry key="../../../../layout/compose-model-1662071107686.xml" value="0.23796296296296296" />
+        <entry key="app/src/main/res/drawable-es/pokedex.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable-es/pokeguide.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable-es/pokeguide_spanish.xml" value="0.1385" />
+        <entry key="app/src/main/res/drawable-es/pokequiz.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable-es/pokequiz_spanish.xml" value="0.1045" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable-v24/ic_pokemon_navicon.xml" value="0.1525" />
+        <entry key="app/src/main/res/drawable-v24/outline_catching_pokemon_20.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/outline_catching_pokemon_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/outline_home_24.xml" value="0.1525" />
+        <entry key="app/src/main/res/drawable-v24/outline_movie_24.xml" value="0.1525" />
+        <entry key="app/src/main/res/drawable-v24/outline_sports_esports_24.xml" value="0.1525" />
+        <entry key="app/src/main/res/drawable-v24/pokedex.xml" value="0.1485" />
+        <entry key="app/src/main/res/drawable-v24/pokeguide.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable-v24/pokeguide_spanish.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable-v24/pokequiz.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable-v24/pokequiz_spanish.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_reaction_24.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_baseline_local_movies_24.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_baseline_videogame_asset_24.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_height.xml" value="0.1605" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_pokemon_logo.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_pokemon_navicon.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_weight.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/poke_mon_the_movie_logo.xml" value="0.1105" />
+        <entry key="app/src/main/res/drawable/poke_mon_vg_logo.xml" value="0.1105" />
+        <entry key="app/src/main/res/drawable/pokedex.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable/pokeguide.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable/pokeguide_spanish.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable/pokequiz.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable/pokequiz_spanish.xml" value="0.1285" />
+        <entry key="app/src/main/res/drawable/whos_that_pokemon.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1605" />
       </map>
     </option>
   </component>
