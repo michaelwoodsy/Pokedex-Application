@@ -28,6 +28,8 @@ class GuessPokemonViewModel @Inject constructor(
         )
     )
 
+    var score = mutableStateOf(0)
+
     var blendMode = mutableStateOf(BlendMode.SrcIn)
 
     private var isLoading = mutableStateOf(false)
@@ -102,6 +104,18 @@ class GuessPokemonViewModel @Inject constructor(
             blendMode.value = BlendMode.Dst
             delay(2500)
             getRandomPokemon(generation.value)
+        }
+    }
+
+    fun addToScore() {
+        viewModelScope.launch {
+            score.value += 1
+        }
+    }
+
+    fun resetScore() {
+        viewModelScope.launch {
+            score.value = 0
         }
     }
 

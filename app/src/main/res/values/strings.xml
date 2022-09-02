@@ -48,4 +48,5 @@
     <string name="generation_7">Generation 7</string>
     <string name="generation_8">Generation 8</string>
     <string name="pokeguide_about">Welcome to PokéGuide, the ultimate guide to Pokémon! Use the Pokédex to explore all 913 different Pokémon, or try the PokéQuiz, a game in which you guess which Pokémon it is based on its silhouette. PokéGuide has been made for educational purposes and has no direct association to Pokémon. Check out the Pokémon website at the bottom of this screen.</string>
+    <string name="current_score">Current Score:</string>
 </resources>

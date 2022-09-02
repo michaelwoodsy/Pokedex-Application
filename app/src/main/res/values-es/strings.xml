@@ -48,4 +48,5 @@
     <string name="generation_7">Generación 7</string>
     <string name="generation_8">Generación 8</string>
     <string name="pokeguide_about">¡Bienvenido a PokéGuía, la guía definitiva de Pokémon! Usa la Pokédex para explorar los 913 Pokémon diferentes, o prueba el PokéPrueba, un juego en el que adivinas de qué Pokémon se trata según su silueta. PokéGuía se ha creado con fines educativos y no tiene una asociación directa con Pokémon. Visite el sitio web de Pokémon en la parte inferior de esta pantalla.</string>
+    <string name="current_score">Puntuación Actual:</string>
 </resources>

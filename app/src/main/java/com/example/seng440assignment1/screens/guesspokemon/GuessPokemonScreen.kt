@@ -29,6 +29,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.toSize
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.SubcomposeAsyncImage
@@ -45,6 +46,7 @@ fun GuessPokemonScreen(
     val configuration = LocalConfiguration.current
     val pokemon by remember { viewModel.randomPokemon }
     val blendMode = remember { viewModel.blendMode }
+    val score = remember { viewModel.score }
     val scrollState = rememberScrollState()
 
     Surface(
@@ -66,6 +68,13 @@ fun GuessPokemonScreen(
                             .align(Alignment.CenterHorizontally)
                             .padding(16.dp)
                     )
+                    GuessSection(
+                        hint = stringResource(id = R.string.guess_pokemon_textfield),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        pokemon = pokemon,
+                    )
                     Column(
                         modifier = Modifier
                             .fillMaxSize()
@@ -75,6 +84,13 @@ fun GuessPokemonScreen(
                             .background(MaterialTheme.colors.surface)
                     ) {
                         DropDownMenu()
+                        Text(
+                            text = stringResource(id = R.string.current_score) + " ${score.value}",
+                            fontSize = 20.sp,
+                            modifier = Modifier
+                                .padding(16.dp)
+                                .align(Alignment.CenterHorizontally)
+                        )
                         Box(modifier = Modifier
                             .fillMaxWidth()
                             .fillMaxHeight()
@@ -87,7 +103,7 @@ fun GuessPokemonScreen(
                                 contentDescription = pokemon.pokemonName,
                                 contentScale = ContentScale.Crop,
                                 modifier = Modifier
-                                    .size(200.dp)
+                                    .size(240.dp)
                                     .align(Alignment.Center),
                                 loading = {
                                     CircularProgressIndicator(
@@ -102,13 +118,6 @@ fun GuessPokemonScreen(
                             )
                         }
                     }
-                    GuessSection(
-                        hint = stringResource(id = R.string.guess_pokemon_textfield),
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(16.dp),
-                        pokemon = pokemon,
-                    )
                 }
             }
             else -> {
@@ -123,8 +132,8 @@ fun GuessPokemonScreen(
                     ) {
                         Column(
                             modifier = Modifier
-                            .fillMaxWidth(0.4f)
-                            .align(Alignment.CenterStart)
+                                .fillMaxWidth(0.4f)
+                                .align(Alignment.CenterStart)
                         ) {
                             Image(
                                 painter = painterResource(id = R.drawable.pokequiz),
@@ -155,6 +164,13 @@ fun GuessPokemonScreen(
                                     .background(MaterialTheme.colors.surface)
                             ) {
                                 DropDownMenu()
+                                Text(
+                                    text = stringResource(id = R.string.current_score) + " ${score.value}",
+                                    fontSize = 20.sp,
+                                    modifier = Modifier
+                                        .padding(16.dp)
+                                        .align(Alignment.CenterHorizontally)
+                                )
                                 Box(modifier = Modifier
                                     .fillMaxWidth()
                                     .fillMaxHeight()
@@ -167,7 +183,7 @@ fun GuessPokemonScreen(
                                         contentDescription = pokemon.pokemonName,
                                         contentScale = ContentScale.Crop,
                                         modifier = Modifier
-                                            .size(200.dp)
+                                            .size(180.dp)
                                             .align(Alignment.Center),
                                         loading = {
                                             CircularProgressIndicator(
@@ -238,15 +254,20 @@ fun GuessSection(
         Button(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
+                .padding(
+                    start = 16.dp,
+                    end = 16.dp,
+                ),
             onClick = {
                 if (searchText.lowercase() == pokemonName.lowercase()) {
                     Toast.makeText(context, "$correctText $pokemonName", Toast.LENGTH_SHORT).show()
                     searchText = ""
+                    viewModel.addToScore()
                     viewModel.revealPokemonColour()
                 } else {
                     Toast.makeText(context, "$incorrectText $pokemonName", Toast.LENGTH_SHORT).show()
                     searchText = ""
+                    viewModel.resetScore()
                     viewModel.revealPokemonColour()
                 }
             },
@@ -317,6 +338,7 @@ fun DropDownMenu(
                     selectedText = label
                     expanded = false
                     generation.value = selectedText
+                    viewModel.resetScore()
                     viewModel.getRandomPokemon(generation.value)
                 }) {
                     Text(text = label)
